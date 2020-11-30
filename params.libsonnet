@@ -1,8 +1,8 @@
 {
   containerPort: 80,
-  image: "gcr.io/heptio-images/ks-guestbook-demo:0.2",
-  name: "jsonnet-guestbook-ui",
+  image: "https://hub.docker.com/r/tutum/hello-world",
+  name: "hello-world",
   replicas: 1,
-  servicePort: 80,
-  type: "LoadBalancer",
+  servicePort: 30005,
+  type: "NodePort",
 }
